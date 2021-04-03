@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==6.2.2
+Cython
+pytest-cov
+coveralls

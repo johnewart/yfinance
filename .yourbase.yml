@@ -1,0 +1,52 @@
+build_targets:
+  - &default
+    name: default
+    commands:
+      - pip install -r requirements-dev.txt
+      - pytest tests
+  - <<: *default
+    name: python27
+    dependencies:
+      build:
+        - python:2.7
+  - <<: *default
+    name: python35
+    dependencies:
+      build:
+        - python:3.5
+  - <<: *default
+    name: python36
+    dependencies:
+      build:
+        - python:3.6
+  - <<: *default
+    name: python37
+    dependencies:
+      build:
+        - python:3.7
+  - <<: *default
+    name: python38
+    dependencies:
+      build:
+        - python:3.8
+  - <<: *default
+    name: python39
+    dependencies:
+      build:
+        - python:3.9
+  
+ci:
+  builds:
+    - build_target: python27
+      name: python27
+    - build_target: python35
+      name: python35
+    - build_target: python36
+      name: python36
+    - build_target: python37
+      name: python37
+    - build_target: python38
+      name: python38
+    - build_target: python39
+      name: python39
+  
