@@ -1,8 +1,8 @@
-build_targets:
+:
   - &default
     name: default
     commands:
-      - pip install -r requirements-dev.txt
+      - pip install -r requirements_dev.txt
       - pytest tests
   - <<: *default
     name: python27
