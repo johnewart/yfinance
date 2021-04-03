@@ -1,6 +1,8 @@
 build_targets:
   - &default
     name: default
+    environment: 
+      - YB_DISABLE_PYTHON=true
     commands:
       - pip install -r requirements_dev.txt
       - pytest tests
