@@ -298,6 +298,7 @@ Legal Stuff
 P.S.
 ------------
 
-Please drop me an note with any feedback you have.
+Please drop me a note with any feedback you have.
 
 **Ran Aroussi**
+
